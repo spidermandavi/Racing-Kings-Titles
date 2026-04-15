@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   initRouter();
 });
 function reloadPage() {
+  clearCache();
   renderPage(currentPage);
 }
 function updateYouNav() {
