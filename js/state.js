@@ -3,7 +3,7 @@
 let players = [
   {
     id: 1,
-    username: "Player1",
+    username: "Rank-8_RK",
     title: "RKGM",
     titleFull: "Racing Kings Grandmaster",
     titleAwarded: "2026-04-10",
@@ -19,7 +19,7 @@ let players = [
   },
   {
     id: 2,
-    username: "Player2",
+    username: "Mysterious_Past",
     title: "RKM",
     titleFull: "Racing Kings Master",
     titleAwarded: "2026-03-22",
@@ -35,7 +35,7 @@ let players = [
   },
   {
     id: 3,
-    username: "Player3",
+    username: "spidermandavi",
     title: "RKCM",
     titleFull: "Candidate Master",
     titleAwarded: "2026-02-15",
