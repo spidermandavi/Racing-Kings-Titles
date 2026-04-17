@@ -234,3 +234,35 @@ body {
 .hidden {
   display: none;
 }
+.player-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.player-rank {
+  width: 40px;
+  font-weight: bold;
+  color: #888;
+}
+
+.player-name {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.player-rating {
+  font-weight: bold;
+}
+
+/* ⭐ Highlight titled players */
+.player-row.titled {
+  background: linear-gradient(90deg, rgba(255,215,0,0.15), transparent);
+}
+
+/* Flag spacing */
+.flag {
+  margin-right: 6px;
+}
