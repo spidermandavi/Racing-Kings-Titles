@@ -48,7 +48,23 @@ let players = [
     winRate: null,
     country: null,
     history: []
-  }
+  },
+   {
+    id: 4,
+    username: "RoyalManiac",
+    title: "RKCM",
+    titleFull: "Candidate Master",
+    titleAwarded: "2026-02-15",
+    bestRatedWin: 2100,
+    note: "",
+    rankOverride: null,
+    rating: null,
+    peakRating: null,
+    gamesPlayed: null,
+    winRate: null,
+    country: null,
+    history: []
+   }
 ];
 
 // ===== TITLE PRIORITY =====
