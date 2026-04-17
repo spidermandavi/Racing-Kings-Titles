@@ -49,7 +49,7 @@ let players = [
     country: null,
     history: []
   },
-   {
+  {
     id: 4,
     username: "RoyalManiac",
     title: "RKCM",
@@ -64,7 +64,7 @@ let players = [
     winRate: null,
     country: null,
     history: []
-   }
+  }
 ];
 
 // ===== TITLE PRIORITY =====
