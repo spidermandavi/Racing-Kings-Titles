@@ -307,3 +307,19 @@ body {
 .special {
   border-left: 5px solid #cc66ff;
 }
+.rating-col {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  width: 80px;
+}
+
+.country-col {
+  text-align: center;
+  width: 60px;
+}
+
+.player-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px 60px;
+  align-items: center;
+}
