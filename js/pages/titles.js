@@ -28,8 +28,6 @@ function renderAbout() {
 
     <p>Created by <a href="https://lichess.org/@/Mysterious_Past" target="_blank">Mysterious_Past</a> with the help of many great Racing Kings players.</p>
 
-    <p>Please contact <a href="https://lichess.org/@/Mysterious_Past" target="_blank">Mysterious_Past</a> for suggestions, problems, or questions.</p>
-
-    <p>Please contact <a href="https://lichess.org/@/Mysterious_Past" target="_blank">Mysterious_Past</a> to apply for a title.</p>
+    <p>Please contact <a href="https://lichess.org/@/Mysterious_Past" target="_blank">Mysterious_Past</a> for suggestions, problems, questions or to apply for a title.</p>
   `;
 }
