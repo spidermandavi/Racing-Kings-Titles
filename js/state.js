@@ -70,12 +70,12 @@ const titleFullMap = {
   RKGM: "Racing Kings Grandmaster",
   RKM: "Racing Kings Master",
   RKCM: "Racing Kings Candidate Master",
-  RKC: "Racing Kings Class A",
+  RKC: "Racing Kings Candidate",
   RKI: "Racing Kings Intermediate",
   RKB: "Racing Kings Beginner",
   RKK: "Racing Kings King",
 
-  RKV: "Racing Kings Verified",
+  RKV: "Racing Kings Veteran",
   RKHM: "Racing Kings Honorary Master"
 };
 
