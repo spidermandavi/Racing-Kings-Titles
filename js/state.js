@@ -78,6 +78,27 @@ const titleFullMap = {
   RKV: "Racing Kings Veteran",
   RKHM: "Racing Kings Honorary Master"
 };
+// ===== FILTER OPTIONS =====
+
+const filterOptions = [
+  { value: "titles", label: "Order by Titles" }, // default
+  { value: "rating", label: "Order by Rating" },
+
+  { value: "RKK", label: "RKK only" },
+
+  { value: "RKSGM", label: "RKSGM only" },
+  { value: "RKGM", label: "RKGM only" },
+  { value: "RKM", label: "RKM only" },
+  { value: "RKCM", label: "RKCM only" },
+  { value: "RKC", label: "RKC only" },
+  { value: "RKI", label: "RKI only" },
+  { value: "RKB", label: "RKB only" },
+
+  { value: "RKV", label: "RKV only" },
+  { value: "RKHM", label: "RKHM only" }
+];
+
+let currentFilter = "titles";
 
 // CSS CLASS MAPPING (YOUR COLORS)
 const titleClassMap = {
@@ -245,6 +266,25 @@ function sortPlayers(list) {
     if (A.gamesPlayed !== B.gamesPlayed) return B.gamesPlayed - A.gamesPlayed;
 
     return A.username.localeCompare(B.username);
+  });
+}
+function applyFilter(list) {
+  if (currentFilter === "titles") {
+    return sortPlayers(list);
+  }
+
+  if (currentFilter === "rating") {
+    return [...list].sort((a, b) => {
+      return (b.rating || 0) - (a.rating || 0);
+    });
+  }
+
+  // Filter by specific title
+  return list.filter(player => {
+    const titles = getPlayerTitles(player);
+    return titles.includes(currentFilter);
+  }).sort((a, b) => {
+    return (b.rating || 0) - (a.rating || 0);
   });
 }
 
