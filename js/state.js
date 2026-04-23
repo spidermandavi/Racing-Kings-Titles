@@ -19,9 +19,9 @@ let players = [
   {
     id: 2,
     username: "Mysterious_Past",
-    mainTitle: "RKM",
+    mainTitle: "RKHM",
     extraTitles: [],
-    titleAwarded: "2026-03-22",
+    titleAwarded: "2026-04-23",
     note: "Aggressive style",
     rankOverride: null,
     rating: null,
