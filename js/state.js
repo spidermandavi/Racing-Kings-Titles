@@ -4,10 +4,10 @@ let players = [
   {
     id: 1,
     username: "Rank-8_RK",
-    mainTitle: "RKGM",
+    mainTitle: "RKI",
     extraTitles: [],
-    titleAwarded: "2026-04-10",
-    note: "Top RK player",
+    titleAwarded: "2026-04-23",
+    note: "Good RK player",
     rankOverride: null,
     rating: null,
     peakRating: null,
