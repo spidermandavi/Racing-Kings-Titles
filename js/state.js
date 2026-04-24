@@ -48,7 +48,7 @@ let players = [
   },
   {
     id: 4,
-    username: "ranavjaswal",
+    username: "ronavjaswal",
     mainTitle: "RKC",
     extraTitles: [],
     titleAwarded: "2026-04-24",
