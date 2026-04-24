@@ -358,3 +358,32 @@ body {
 .stat-card strong {
   font-size: 1.4rem;
 }
+.about-card {
+  max-width: 700px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  line-height: 1.6;
+}
+
+.about-main {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-sub {
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+/* 🔥 Link styling (no underline, clean color) */
+.about-card a {
+  color: #4da3ff; /* adjust to your theme */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-card a:hover {
+  text-decoration: underline;
+}
