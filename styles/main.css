@@ -297,3 +297,64 @@ body {
     font-size: 12px;
   }
 }
+/* PROFILE CARD */
+.profile-card {
+  background: var(--card-bg, #111);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* LICHESS BUTTON */
+.lichess-btn {
+  text-decoration: none;
+  background: #2e7d32;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.lichess-btn:hover {
+  background: #1b5e20;
+}
+
+/* STATS GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+/* STAT CARD */
+.stat-card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.stat-card strong {
+  font-size: 1.4rem;
+}
