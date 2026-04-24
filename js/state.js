@@ -48,10 +48,10 @@ let players = [
   },
   {
     id: 4,
-    username: "RoyalManiac",
-    mainTitle: "RKCM",
+    username: "ranavjaswal",
+    mainTitle: "RKC",
     extraTitles: [],
-    titleAwarded: "2026-02-15",
+    titleAwarded: "2026-04-24",
     note: "",
     rankOverride: null,
     rating: null,
