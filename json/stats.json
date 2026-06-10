@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+
+  "lastUpdate": "2026-06-10",
+
+  "overall": {
+    "totalMembers": 0,
+    "totalTitledPlayers": 0
+  },
+
+  "variants": {
+    "racingkings": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0,
+
+      "titles": {
+        "RKWC": 0,
+        "RKSGM": 0,
+        "RKGM": 0,
+        "RKIM": 0,
+        "RKM": 0,
+        "RKCM": 0,
+        "RKV": 0,
+        "RKHM": 0
+      },
+
+      "rkwcHolders": 0
+    },
+
+    "atomic": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0
+    },
+
+    "antichess": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0
+    },
+
+    "horde": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0
+    },
+
+    "crazyhouse": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0
+    },
+
+    "threecheck": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0
+    },
+
+    "kingofthehill": {
+      "totalMembers": 0,
+      "totalTitledPlayers": 0
+    }
+  }
+}
