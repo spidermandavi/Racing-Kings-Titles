@@ -210,13 +210,8 @@
   </div>
 </footer>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/animations.js"></script>
-</body>
-</html>
-
-<script>
-fetch("jsons/stats.json")
+    <script>
+fetch("json/stats.json")
   .then(response => response.json())
   .then(stats => {
     document.getElementById("total-members").textContent =
@@ -232,3 +227,10 @@ fetch("jsons/stats.json")
     console.error("Failed to load stats:", error);
   });
 </script>
+
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>
+
