@@ -39,3 +39,49 @@
   color: var(--muted-2);
   font-size: 0.92rem;
 }
+.accordion-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:start;
+}
+
+.accordion-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.accordion-card summary{
+  list-style:none;
+  cursor:pointer;
+  padding:20px 24px;
+  font-size:1.25rem;
+  font-weight:700;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.accordion-card summary::-webkit-details-marker{
+  display:none;
+}
+
+.accordion-arrow{
+  transition:transform .3s ease;
+}
+
+.accordion-card[open] .accordion-arrow{
+  transform:rotate(180deg);
+}
+
+.accordion-content{
+  padding:0 24px 24px;
+}
+
+@media (max-width:900px){
+  .accordion-grid{
+    grid-template-columns:1fr;
+  }
+}
