@@ -1,0 +1,168 @@
+/* ---------- Title Colours ---------- */
+
+:root{
+  --rkwc:#9b59b6;
+  --rksgm:#f1c40f;
+  --rkgm:#e74c3c;
+  --rkim:#3498db;
+  --rkm:#2ecc71;
+  --rkcm:#bdc3c7;
+  --rkv:#9b59b6;
+  --rkhm:#9b59b6;
+}
+
+/* ---------- Overview Grid ---------- */
+
+.title-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+@media (max-width:900px){
+  .title-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:600px){
+  .title-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* ---------- Title Cards ---------- */
+
+.title-card{
+  background:var(--surface);
+  border:2px solid var(--border);
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+  transition:.25s ease;
+}
+
+.title-card:hover{
+  transform:translateY(-4px);
+}
+
+.title-card img{
+  width:90px;
+  height:90px;
+  object-fit:contain;
+  margin:0 auto 16px;
+}
+
+.title-card h3{
+  margin:0;
+  font-size:1.3rem;
+}
+
+.title-card p{
+  color:var(--muted);
+}
+
+/* ---------- Title Colours ---------- */
+
+.title-rkwc{
+  border-color:var(--rkwc);
+}
+
+.title-rksgm{
+  border-color:var(--rksgm);
+}
+
+.title-rkgm{
+  border-color:var(--rkgm);
+}
+
+.title-rkim{
+  border-color:var(--rkim);
+}
+
+.title-rkm{
+  border-color:var(--rkm);
+}
+
+.title-rkcm{
+  border-color:var(--rkcm);
+}
+
+.title-rkv{
+  border-color:var(--rkv);
+}
+
+.title-rkhm{
+  border-color:var(--rkhm);
+}
+
+/* ---------- Progression ---------- */
+
+.progression{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  margin-top:24px;
+}
+
+.progression-step{
+  background:var(--surface);
+  border:1px solid var(--border);
+  padding:12px 20px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.progression-arrow{
+  color:var(--muted);
+  font-size:1.2rem;
+}
+
+/* ---------- Latest Titles ---------- */
+
+.latest-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+
+@media (max-width:1100px){
+  .latest-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:600px){
+  .latest-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.latest-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px;
+}
+
+.latest-card h3{
+  margin:0 0 8px;
+}
+
+.latest-card .title{
+  font-weight:700;
+}
+
+.latest-card .date{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-grid{
+  display:grid;
+  gap:16px;
+}
