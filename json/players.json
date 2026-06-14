@@ -3,17 +3,18 @@
   "lastUpdate": "2026-06-11",
 
   "statistics": {
-    "totalPlayers": 4,
-    "totalCertificates": 15,
+    "totalPlayers": 6,
+    "totalCertificates": 6,
     "titleCounts": {
-      "RKM": 4,
-      "RKCM": 4,
-      "RKIM": 3,
-      "RKGM": 2,
-      "RKSGM": 1,
-      "RKWC": 2,
-      "RKV": 2,
-      "RKHC": 1
+      "RKM": 0,
+      "RKCM": 2,
+      "RKIM": 1,
+      "RKGM": 0,
+      "RKSGM": 0,
+      "RKWC": 0,
+      "RKV": 0,
+      "RKHM": 0,
+      "Member": 3
     }
   },
 
@@ -203,7 +204,7 @@
 
       "currentTitles": {
         "main": ["RKCM"],
-        "special": ["RKHC"]
+        "special": ["RKHM"]
       },
 
       "certificates": [
@@ -225,7 +226,7 @@
         },
         {
           "certificateId": "2026-rkhc-castlebreaker",
-          "title": "RKHC",
+          "title": "RKHM",
           "category": "special",
           "date": "2026-04-12",
           "image": "certificates/castlebreaker-rkhc.png",
