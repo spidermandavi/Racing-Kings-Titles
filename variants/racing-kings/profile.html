@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Player Profile | Racing Kings Title System</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../assets/css/main.css">
+<link rel="stylesheet" href="../../assets/css/home.css">
+<link rel="stylesheet" href="../../assets/css/animations.css">
+
+<style>
+
+.profile-grid{
+  display:grid;
+  gap:24px;
+}
+
+.profile-card{
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.04),
+    rgba(255,255,255,.02)
+  );
+  padding:24px;
+}
+
+.profile-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.profile-name{
+  margin:0;
+  font-size:2.2rem;
+}
+
+.profile-meta{
+  color:var(--muted);
+  margin-top:10px;
+}
+
+.title-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:16px;
+}
+
+.title-badge{
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.05);
+}
+
+.cert-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.cert-table th,
+.cert-table td{
+  padding:14px;
+  text-align:left;
+  border-bottom:1px solid var(--border);
+}
+
+.cert-table th{
+  color:var(--muted);
+}
+
+.link-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.not-found{
+  text-align:center;
+  padding:80px 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="page-shell">
+
+<header class="site-header reveal">
+<div class="header-inner">
+
+<a class="brand" href="../../index.html">
+<span class="brand-title">Variant Title System</span>
+<span class="brand-subtitle">Racing Kings Title System</span>
+</a>
+
+<nav class="variant-nav">
+<a class="nav-chip" href="index.html">Home</a>
+<a class="nav-chip" href="leaderboard.html">Leaderboard</a>
+<a class="nav-chip" href="titles.html">Titles</a>
+<a class="nav-chip active" href="players.html">Players</a>
+<a class="nav-chip" href="hall-of-fame.html">Hall of Fame</a>
+<a class="nav-chip" href="news.html">News</a>
+<a class="nav-chip" href="community.html">Community</a>
+<a class="nav-chip" href="about.html">About</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<section class="hero" style="min-height:auto;padding-bottom:40px;">
+<div class="container">
+
+<div id="profileContainer">
+
+<div class="hero-panel">
+Loading player profile...
+</div>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="container footer-inner">
+<div>
+<strong>Racing Kings Title System</strong><br>
+<span>Unofficial community project.</span>
+</div>
+</div>
+</footer>
+
+</div>
+
+<script>
+
+const params=new URLSearchParams(window.location.search);
+const playerId=params.get("id");
+
+const container=
+document.getElementById("profileContainer");
+
+async function loadProfile(){
+
+  try{
+
+    const response=
+      await fetch("json/players.json");
+
+    const data=
+      await response.json();
+
+    const player=
+      data.players.find(
+        p=>p.playerId===playerId
+      );
+
+    if(!player){
+
+      container.innerHTML=`
+        <div class="profile-card not-found">
+          <h2>Player Not Found</h2>
+          <p>
+            The requested player could not be found.
+          </p>
+        </div>
+      `;
+
+      return;
+    }
+
+    renderPlayer(player);
+
+  }catch(error){
+
+    container.innerHTML=`
+      <div class="profile-card not-found">
+        <h2>Error Loading Profile</h2>
+      </div>
+    `;
+
+  }
+
+}
+
+function renderPlayer(player){
+
+  const mainTitles=
+    (player.currentTitles.main || [])
+    .filter(title=>title);
+
+  const specialTitles=
+    (player.currentTitles.special || [])
+    .filter(title=>title);
+
+  container.innerHTML=`
+
+<div class="profile-grid">
+
+<div class="profile-card">
+
+<div class="profile-header">
+
+<div>
+
+<h1 class="profile-name">
+${player.player}
+</h1>
+
+<div class="profile-meta">
+
+🌍 ${player.country}<br>
+📅 Joined ${player.joined}
+
+</div>
+
+</div>
+
+</div>
+
+<div class="title-list">
+
+${mainTitles.map(title=>`
+<span class="title-badge">${title}</span>
+`).join("")}
+
+${specialTitles.map(title=>`
+<span class="title-badge">${title}</span>
+`).join("")}
+
+</div>
+
+</div>
+
+<div class="profile-card">
+
+<h2>Description</h2>
+
+<p>
+${player.description || "No description available."}
+</p>
+
+</div>
+
+<div class="profile-card">
+
+<h2>Certificates</h2>
+
+<table class="cert-table">
+
+<thead>
+<tr>
+<th>Title</th>
+<th>Date</th>
+<th>View</th>
+</tr>
+</thead>
+
+<tbody>
+
+${player.certificates.map(cert=>`
+
+<tr>
+
+<td>${cert.title}</td>
+
+<td>${cert.date}</td>
+
+<td>
+
+<a
+class="button"
+href="${cert.image}"
+target="_blank"
+>
+
+View
+
+</a>
+
+</td>
+
+</tr>
+
+`).join("")}
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="profile-card">
+
+<h2>Links</h2>
+
+<div class="link-grid">
+
+<a
+class="button"
+href="leaderboard.html"
+>
+Leaderboard
+</a>
+
+<a
+class="button"
+href="certificates.html"
+>
+Certificates
+</a>
+
+<a
+class="button"
+href="https://lichess.org/@/${player.player}"
+target="_blank"
+>
+Lichess
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+loadProfile();
+
+</script>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/animations.js"></script>
+
+</body>
+</html>
