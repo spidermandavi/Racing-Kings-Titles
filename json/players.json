@@ -20,57 +20,25 @@
 
   "players": [
     {
-      "player": "ExamplePlayer",
-      "playerId": "exampleplayer",
-      "country": "Brazil",
-      "joined": "2025-08-14",
-      "description": "One of the earliest members of the Racing Kings title system.",
+      "player": "Somerandomguy25",
+      "playerId": "1",
+      "country": "Germany",
+      "joined": "19 Aug 2025",
+      "description": "The first member of the Racing Kings title system.",
 
       "currentTitles": {
-        "main": ["RKGM"],
-        "special": ["RKWC"]
+        "main": ["RKCM"],
+        "special": [""]
       },
 
       "certificates": [
         {
-          "certificateId": "2025-rkm-exampleplayer",
-          "title": "RKM",
-          "category": "main",
-          "date": "2025-09-03",
-          "image": "certificates/exampleplayer-rkm.png",
-          "note": "First official title."
-        },
-        {
-          "certificateId": "2025-rkcm-exampleplayer",
+          "certificateId": "2026-rkcm-Somerandomguy25",
           "title": "RKCM",
           "category": "main",
-          "date": "2025-12-11",
-          "image": "certificates/exampleplayer-rkcm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkim-exampleplayer",
-          "title": "RKIM",
-          "category": "main",
-          "date": "2026-02-07",
-          "image": "certificates/exampleplayer-rkim.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkgm-exampleplayer",
-          "title": "RKGM",
-          "category": "main",
-          "date": "2026-04-18",
-          "image": "certificates/exampleplayer-rkgm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkwc-exampleplayer",
-          "title": "RKWC",
-          "category": "special",
-          "date": "2026-05-29",
-          "image": "certificates/exampleplayer-rkwc.png",
-          "note": "Won the Racing Kings World Championship."
+          "date": "29 May 2026",
+          "image": "certificates/Racing Kings/1: Somerandomguy25 (CM).jpeg",
+          "note": "First official title."
         }
       ]
     },
