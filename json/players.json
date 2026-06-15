@@ -28,7 +28,7 @@
 
       "currentTitles": {
         "main": ["RKCM"],
-        "special": [""]
+        "special": []
       },
 
       "certificates": [
@@ -52,7 +52,7 @@
 
       "currentTitles": {
         "main": ["RKIM"],
-        "special": [""]
+        "special": []
       },
 
       "certificates": [
@@ -76,7 +76,7 @@
 
       "currentTitles": {
         "main": ["Member"],
-        "special": [""]
+        "special": []
       },
 
       "certificates": [
@@ -95,12 +95,12 @@
       "player": "Mysterious_Past",
       "playerId": "4",
       "country": "Germany",
-      "joined": "26 March 2026",
+      "joined": "26 Mar 2026",
       "description": "Veteran Racing Kings competitor and community organizer.",
 
       "currentTitles": {
         "main": ["Member"],
-        "special": [""]
+        "special": []
       },
 
       "certificates": [
@@ -109,7 +109,7 @@
           "title": "Member",
           "category": "main",
           "date": "29 May 2026",
-          "image": "certificates/Racing Kings/Mysterious_Past (Member).jpeg",
+          "image": "certificates/Racing Kings/4: Mysterious_Past (Member).jpeg",
           "note": ""
         }
       ]
