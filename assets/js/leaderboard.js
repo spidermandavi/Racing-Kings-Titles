@@ -21,8 +21,56 @@ const TITLE_CLASS = {
   RKHM: "title-rkhm",
   Member: "title-member"
 };
+async function fetchTopRKPlayers(limit = 10) {
+  try {
+    const res = await fetch(`https://lichess.org/api/player/top/${limit}/racingKings`);
 
-const LICHESS_RK_TOP_URL = "https://lichess.org/api/player/top/racingKings";
+    if (!res.ok) {
+      throw new Error("Failed to fetch top players");
+    }
+
+    const data = await res.json();
+
+    return data.users.map(u => ({
+      username: u.username,
+      rating: u.perfs?.racingKings?.rating ?? null,
+      title: u.title ?? "Member"
+    }));
+
+  } catch (err) {
+    console.error("Top players API error:", err);
+    return [];
+  }
+}
+function renderTop10Leaderboard(users) {
+  els.body.innerHTML = users.map((u, i) => {
+    return `
+      <tr>
+        <td>${i + 1}</td>
+
+        <td>
+          <a class="player-link"
+             href="https://lichess.org/@/${u.username}"
+             target="_blank">
+            ${u.username}
+          </a>
+        </td>
+
+        <td>Lichess</td>
+
+        <td>${u.rating ?? 0}</td>
+
+        <td>
+          <span class="title-badge title-member">
+            ${u.title || "Member"}
+          </span>
+        </td>
+      </tr>
+    `;
+  }).join("");
+}
+
+const LICHESS_RK_TOP_URL = "https://lichess.org/player/top/racingKings";
 const TOP10_CACHE_KEY = "rk-top10-cache-v1";
 const TOP10_CACHE_MS = 60 * 1000;
 
@@ -313,19 +361,19 @@ function setFilterStateForMode(mode) {
 async function render() {
   const mode = els.mode.value;
 
-  if (mode === "top10") {
-    setFilterStateForMode(mode);
-    els.body.innerHTML = `<tr><td colspan="5">Loading live Lichess top 10...</td></tr>`;
-    try {
-      const rows = await fetchTop10FromLichess();
-      renderTop10Leaderboard(rows);
-    } catch (err) {
-      els.body.innerHTML = `<tr><td colspan="5">Failed to load Lichess top 10.</td></tr>`;
-      console.error(err);
-    }
-    return;
-  }
+if (mode === "top10") {
 
+  setFilterStateForMode(mode);
+
+  els.body.innerHTML =
+    `<tr><td colspan="5">Loading Top 10...</td></tr>`;
+
+  const users = await fetchTopRKPlayers(10);
+
+  renderTop10Leaderboard(users);
+
+  return;
+}  
   setFilterStateForMode(mode);
   renderTitleLeaderboard();
 }
