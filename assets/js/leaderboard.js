@@ -22,7 +22,7 @@ const TITLE_CLASS = {
   Member: "title-member"
 };
 
-const LICHESS_RK_TOP_URL = "https://lichess.org/player/top/racingKings";
+const LICHESS_RK_TOP_URL = "https://lichess.org/api/player/top/racingKings";
 const TOP10_CACHE_KEY = "rk-top10-cache-v1";
 const TOP10_CACHE_MS = 60 * 1000;
 
