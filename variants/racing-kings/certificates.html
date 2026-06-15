@@ -197,7 +197,7 @@ const sortFilter = document.getElementById("sortFilter");
 
 async function load(){
 
-  const res = await fetch("json/players.json");
+  const res = await fetch("../../json/players.json");
   const data = await res.json();
 
   const players = data.players || [];
