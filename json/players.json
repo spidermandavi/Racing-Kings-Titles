@@ -44,161 +44,73 @@
     },
 
     {
-      "player": "KingHunter",
-      "playerId": "kinghunter",
-      "country": "Germany",
-      "joined": "2025-10-21",
+      "player": "james126",
+      "playerId": "2",
+      "country": "United States",
+      "joined": "17 Apr 2023",
       "description": "Known for strong tournament performances and steady improvement.",
 
       "currentTitles": {
         "main": ["RKIM"],
-        "special": ["RKV"]
+        "special": [""]
       },
 
       "certificates": [
         {
-          "certificateId": "2025-rkm-kinghunter",
-          "title": "RKM",
-          "category": "main",
-          "date": "2025-11-11",
-          "image": "certificates/kinghunter-rkm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkcm-kinghunter",
-          "title": "RKCM",
-          "category": "main",
-          "date": "2026-01-20",
-          "image": "certificates/kinghunter-rkcm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkim-kinghunter",
+          "certificateId": "2026-rkim-james126",
           "title": "RKIM",
           "category": "main",
-          "date": "2026-04-02",
-          "image": "certificates/kinghunter-rkim.png",
+          "date": "29 May 2026",
+          "image": "certificates/Racing Kings/2: james126 (IM).jpeg",
           "note": ""
-        },
-        {
-          "certificateId": "2026-rkv-kinghunter",
-          "title": "RKV",
-          "category": "special",
-          "date": "2026-05-14",
-          "image": "certificates/kinghunter-rkv.png",
-          "note": "Recognized as a verified community contributor."
         }
       ]
     },
 
     {
-      "player": "RoyalKnight",
-      "playerId": "royalknight",
-      "country": "United States",
-      "joined": "2025-12-08",
+      "player": "Mixiong",
+      "playerId": "3",
+      "country": "Earth (no country)",
+      "joined": "30 Jul 2025",
       "description": "Aggressive attacking player with several podium finishes.",
 
       "currentTitles": {
-        "main": ["RKSGM"],
-        "special": ["RKWC", "RKV"]
+        "main": ["Member"],
+        "special": [""]
       },
 
       "certificates": [
         {
-          "certificateId": "2026-rkm-royalknight",
-          "title": "RKM",
+          "certificateId": "2026-rk-member-mixiong",
+          "title": "Member",
           "category": "main",
-          "date": "2026-02-11",
-          "image": "certificates/royalknight-rkm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkcm-royalknight",
-          "title": "RKCM",
-          "category": "main",
-          "date": "2026-03-09",
-          "image": "certificates/royalknight-rkcm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkim-royalknight",
-          "title": "RKIM",
-          "category": "main",
-          "date": "2026-04-03",
-          "image": "certificates/royalknight-rkim.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rkgm-royalknight",
-          "title": "RKGM",
-          "category": "main",
-          "date": "2026-05-06",
-          "image": "certificates/royalknight-rkgm.png",
-          "note": ""
-        },
-        {
-          "certificateId": "2026-rksgm-royalknight",
-          "title": "RKSGM",
-          "category": "main",
-          "date": "2026-05-12",
-          "image": "certificates/royalknight-rksgm.png",
-          "note": "Achieved the highest standard title."
-        },
-        {
-          "certificateId": "2026-rkwc-royalknight",
-          "title": "RKWC",
-          "category": "special",
-          "date": "2026-05-20",
-          "image": "certificates/royalknight-rkwc.png",
-          "note": "World Championship winner."
-        },
-        {
-          "certificateId": "2026-rkv-royalknight",
-          "title": "RKV",
-          "category": "special",
-          "date": "2026-06-01",
-          "image": "certificates/royalknight-rkv.png",
+          "date": "29 May 2026",
+          "image": "certificates/Racing Kings/3: Mixiong (Member).jpeg",
           "note": ""
         }
       ]
     },
 
     {
-      "player": "CastleBreaker",
-      "playerId": "castlebreaker",
-      "country": "India",
-      "joined": "2025-07-02",
+      "player": "Mysterious_Past",
+      "playerId": "4",
+      "country": "Germany",
+      "joined": "26 March 2026",
       "description": "Veteran Racing Kings competitor and community organizer.",
 
       "currentTitles": {
-        "main": ["RKCM"],
-        "special": ["RKHM"]
+        "main": ["Member"],
+        "special": [""]
       },
 
       "certificates": [
         {
-          "certificateId": "2025-rkm-castlebreaker",
-          "title": "RKM",
+          "certificateId": "2026-rk-member-mysterious_past",
+          "title": "Member",
           "category": "main",
-          "date": "2025-08-10",
-          "image": "certificates/castlebreaker-rkm.png",
+          "date": "29 May 2026",
+          "image": "certificates/Racing Kings/Mysterious_Past (Member).jpeg",
           "note": ""
-        },
-        {
-          "certificateId": "2025-rkcm-castlebreaker",
-          "title": "RKCM",
-          "category": "main",
-          "date": "2025-11-26",
-          "image": "certificates/castlebreaker-rkcm.png",
-          "note": "Current active title."
-        },
-        {
-          "certificateId": "2026-rkhc-castlebreaker",
-          "title": "RKHM",
-          "category": "special",
-          "date": "2026-04-12",
-          "image": "certificates/castlebreaker-rkhc.png",
-          "note": "Awarded for exceptional service to the community."
         }
       ]
     }
