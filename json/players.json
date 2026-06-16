@@ -99,7 +99,7 @@
       "description": "Veteran Racing Kings competitor and community organizer.",
 
       "currentTitles": {
-        "main": ["Member"],
+        "main": ["RKCM"],
         "special": []
       },
 
@@ -110,6 +110,14 @@
           "category": "main",
           "date": "29 May 2026",
           "image": "certificates/Racing Kings/4: Mysterious_Past (Member).jpeg",
+          "note": ""
+        },
+        {
+          "certificateId": "2026-rkcm-mysterious_past",
+          "title": "RKCM",
+          "category": "main",
+          "date": "16 June 2026",
+          "image": "certificates/Racing Kings/7: Mysterious_Past (RKCM).jpeg",
           "note": ""
         }
       ]
