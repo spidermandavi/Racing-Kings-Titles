@@ -1,20 +1,21 @@
 {
   "version": "1.0",
-  "lastUpdate": "2026-06-11",
+  "lastUpdate": "16 June 2026",
 
   "statistics": {
-    "totalPlayers": 4,
+    "totalPlayers": 6,
+    "totalTitledPlayers":4,
     "totalCertificates": 4,
     "titleCounts": {
       "RKM": 0,
-      "RKCM": 1,
+      "RKCM": 3,
       "RKIM": 1,
       "RKGM": 0,
       "RKSGM": 0,
       "RKWC": 0,
       "RKV": 0,
       "RKHM": 0,
-      "Member": 2
+      "Member": 6
     }
   },
 
@@ -118,6 +119,27 @@
           "category": "main",
           "date": "16 June 2026",
           "image": "certificates/Racing Kings/7: Mysterious_Past (RKCM).jpeg",
+          "note": ""
+        },
+        {
+      "player": "MandoMan13",
+      "playerId": "5",
+      "country": "Earth (no country)",
+      "joined": "23 Nov 2021",
+      "description": "Veteran Racing Kings competitor and community organizer.",
+
+      "currentTitles": {
+        "main": ["RKCM"],
+        "special": []
+      },
+
+      "certificates": [
+        {
+          "certificateId": "2026-rkcm-mandoman13",
+          "title": "RKCM",
+          "category": "main",
+          "date": "31 May 2026",
+          "image": "certificates/Racing Kings/5: MandoMan13 (RKCM).jpeg",
           "note": ""
         }
       ]
