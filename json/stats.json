@@ -1,23 +1,23 @@
 {
   "version": "1.0",
 
-  "lastUpdate": "16 Jun 2026",
+  "lastUpdate": "17 June 2026",
 
   "overall": {
-    "totalMembers": 6,
-    "totalTitledPlayers": 4
+    "totalMembers": 7,
+    "totalTitledPlayers": 5
   },
 
   "variants": {
     "racingkings": {
-      "totalMembers": 6,
-      "totalTitledPlayers": 4,
+      "totalMembers": 7,
+      "totalTitledPlayers": 5,
 
       "titles": {
         "RKWC": 0,
         "RKSGM": 0,
         "RKGM": 0,
-        "RKIM": 1,
+        "RKIM": 2,
         "RKM": 0,
         "RKCM": 3,
         "RKV": 0,
