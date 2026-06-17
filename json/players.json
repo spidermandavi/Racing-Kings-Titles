@@ -141,6 +141,49 @@
           "date": "31 May 2026",
           "image": "certificates/Racing Kings/5: MandoMan13 (RKCM).jpeg",
           "note": ""
+        },
+        {
+      "player": "CuberJ",
+      "playerId": "6",
+      "country": "Earth (no country)",
+      "joined": "28 Jan 2024",
+      "description": "Veteran Racing Kings competitor and community organizer.",
+
+      "currentTitles": {
+        "main": ["Member"],
+        "special": []
+      },
+
+      "certificates": [
+        {
+          "certificateId": "2026-rk-member-cuberj",
+          "title": "Member",
+          "category": "main",
+          "date": "4 June 2026",
+          "image": "certificates/Racing Kings/6: CuberJ (Member).jpeg",
+          "note": ""
+        },
+        
+        {
+      "player": "panagiskosmatos",
+      "playerId": "7",
+      "country": "Greece",
+      "joined": "18 Mar 2020",
+      "description": "Veteran Racing Kings competitor and community organizer.",
+
+      "currentTitles": {
+        "main": ["RKIM"],
+        "special": []
+      },
+
+      "certificates": [
+        {
+          "certificateId": "2026-rkim-panagiskosmatos",
+          "title": "RKIM",
+          "category": "main",
+          "date": "17 June 2026",
+          "image": "certificates/Racing Kings/8: panagiskosmatos (RKIM).jpeg",
+          "note": ""
         }
       ]
     }
