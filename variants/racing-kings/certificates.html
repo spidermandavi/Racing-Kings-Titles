@@ -270,18 +270,20 @@ function render(){
 
     if(s === "player") return a.player.localeCompare(b.player);
     if(s === "title") return a.title.localeCompare(b.title);
-    return a.date.localeCompare(b.date);
+    return b.date.localeCompare(a.date);
 
   });
 
   if(list.length === 0){
     certBody.innerHTML = `
-      <tr><td colspan="4" class="empty">No certificates found.</td></tr>
+      <tr>
+        <td colspan="4" class="empty">No certificates found.</td>
+      </tr>
     `;
     return;
   }
 
-  certBody.innerHTML = list.map(c => `
+  certBody.innerHTML = list.map((c, index) => `
 
     <tr>
 
@@ -292,14 +294,58 @@ function render(){
       <td>${c.date}</td>
 
       <td>
-        <a class="button" href="${c.image}" target="_blank">
+        <button
+          class="button"
+          type="button"
+          onclick="toggleCertificate(${index}, '${c.image}')"
+          id="btn-${index}">
           View
-        </a>
+        </button>
+      </td>
+
+    </tr>
+
+    <tr id="cert-row-${index}" style="display:none;">
+
+      <td colspan="4" style="padding:20px;text-align:center;">
+
+        <img
+          id="cert-img-${index}"
+          src=""
+          alt="Certificate"
+          style="
+            max-width:100%;
+            height:auto;
+            border-radius:12px;
+            border:1px solid var(--border);
+          ">
+
       </td>
 
     </tr>
 
   `).join("");
+
+}
+
+function toggleCertificate(index, imagePath){
+
+  const row = document.getElementById(`cert-row-${index}`);
+  const img = document.getElementById(`cert-img-${index}`);
+  const btn = document.getElementById(`btn-${index}`);
+
+  if(row.style.display === "none"){
+
+    img.src = imagePath;
+    row.style.display = "table-row";
+    btn.textContent = "Close";
+
+  } else {
+
+    row.style.display = "none";
+    btn.textContent = "View";
+
+  }
 
 }
 
@@ -309,7 +355,7 @@ countryFilter.addEventListener("change", render);
 sortFilter.addEventListener("change", render);
 
 load();
-
+  
 </script>
 
 <script src="../../assets/js/main.js"></script>
