@@ -1,21 +1,21 @@
 {
   "version": "1.0",
-  "lastUpdate": "16 June 2026",
+  "lastUpdate": "17 June 2026",
 
   "statistics": {
-    "totalPlayers": 6,
-    "totalTitledPlayers":4,
-    "totalCertificates": 4,
+    "totalPlayers": 7,
+    "totalTitledPlayers":5,
+    "totalCertificates": 5,
     "titleCounts": {
       "RKM": 0,
       "RKCM": 3,
-      "RKIM": 1,
+      "RKIM": 2,
       "RKGM": 0,
       "RKSGM": 0,
       "RKWC": 0,
       "RKV": 0,
       "RKHM": 0,
-      "Member": 6
+      "Member": 7
     }
   },
 
