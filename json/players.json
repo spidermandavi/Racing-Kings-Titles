@@ -38,7 +38,7 @@
           "title": "RKCM",
           "category": "main",
           "date": "29 May 2026",
-          "image": "certificates/Racing Kings/1: Somerandomguy25 (RKCM).jpeg",
+          "image": "../../certificates/Racing Kings/1: Somerandomguy25 (RKCM).jpeg",
           "note": "First official title."
         }
       ]
@@ -49,7 +49,7 @@
       "playerId": "2",
       "country": "United States",
       "joined": "17 Apr 2023",
-      "description": "Known for strong tournament performances and steady improvement.",
+      "description": "Known for strong tournament performances and organizing many events.",
 
       "currentTitles": {
         "main": ["RKIM"],
@@ -62,7 +62,7 @@
           "title": "RKIM",
           "category": "main",
           "date": "29 May 2026",
-          "image": "certificates/Racing Kings/2: james126 (RKIM).jpeg",
+          "image": "../../certificates/Racing Kings/2: james126 (RKIM).jpeg",
           "note": ""
         }
       ]
@@ -73,7 +73,7 @@
       "playerId": "3",
       "country": "Earth (no country)",
       "joined": "30 Jul 2025",
-      "description": "Aggressive attacking player with several podium finishes.",
+      "description": "Beginner with much promise.",
 
       "currentTitles": {
         "main": ["Member"],
@@ -86,7 +86,7 @@
           "title": "Member",
           "category": "main",
           "date": "29 May 2026",
-          "image": "certificates/Racing Kings/3: Mixiong (Member).jpeg",
+          "image": "../../certificates/Racing Kings/3: Mixiong (Member).jpeg",
           "note": ""
         }
       ]
@@ -97,7 +97,7 @@
       "playerId": "4",
       "country": "Germany",
       "joined": "26 Mar 2026",
-      "description": "Veteran Racing Kings competitor and community organizer.",
+      "description": "Creator of Racing Kings Title System.",
 
       "currentTitles": {
         "main": ["RKCM"],
@@ -110,7 +110,7 @@
           "title": "Member",
           "category": "main",
           "date": "29 May 2026",
-          "image": "certificates/Racing Kings/4: Mysterious_Past (Member).jpeg",
+          "image": "../../certificates/Racing Kings/4: Mysterious_Past (Member).jpeg",
           "note": ""
         },
         {
@@ -118,7 +118,7 @@
           "title": "RKCM",
           "category": "main",
           "date": "16 June 2026",
-          "image": "certificates/Racing Kings/7: Mysterious_Past (RKCM).jpeg",
+          "image": "../../certificates/Racing Kings/7: Mysterious_Past (RKCM).jpeg",
           "note": ""
           }
       ]
@@ -129,7 +129,7 @@
       "playerId": "5",
       "country": "Earth (no country)",
       "joined": "23 Nov 2021",
-      "description": "Veteran Racing Kings competitor and community organizer.",
+      "description": "Veteran Racing Kings competitor and funny player.",
 
       "currentTitles": {
         "main": ["RKCM"],
@@ -153,7 +153,7 @@
       "playerId": "6",
       "country": "Earth (no country)",
       "joined": "28 Jan 2024",
-      "description": "Veteran Racing Kings competitor and community organizer.",
+      "description": "Devoted Racing Kings player. Much promise and a bright future.",
 
       "currentTitles": {
         "main": ["Member"],
@@ -166,7 +166,7 @@
           "title": "Member",
           "category": "main",
           "date": "4 June 2026",
-          "image": "certificates/Racing Kings/6: CuberJ (Member).jpeg",
+          "image": "../../certificates/Racing Kings/6: CuberJ (Member).jpeg",
           "note": ""
           }
       ]
@@ -177,7 +177,7 @@
       "playerId": "7",
       "country": "Greece",
       "joined": "18 Mar 2020",
-      "description": "Veteran Racing Kings competitor and community organizer.",
+      "description": "Racing Kings player for many years. A maker of many sites.",
 
       "currentTitles": {
         "main": ["RKIM"],
@@ -190,7 +190,7 @@
           "title": "RKIM",
           "category": "main",
           "date": "17 June 2026",
-          "image": "certificates/Racing Kings/8: panagiskosmatos (RKIM).jpeg",
+          "image": "../../certificates/Racing Kings/8: panagiskosmatos (RKIM).jpeg",
           "note": ""
         }
       ]
