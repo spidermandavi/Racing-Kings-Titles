@@ -120,8 +120,11 @@
           "date": "16 June 2026",
           "image": "certificates/Racing Kings/7: Mysterious_Past (RKCM).jpeg",
           "note": ""
-        },
-        {
+          }
+      ]
+    },
+
+    {
       "player": "MandoMan13",
       "playerId": "5",
       "country": "Earth (no country)",
@@ -141,8 +144,11 @@
           "date": "31 May 2026",
           "image": "certificates/Racing Kings/5: MandoMan13 (RKCM).jpeg",
           "note": ""
-        },
-        {
+          }
+      ]
+    },
+
+    {
       "player": "CuberJ",
       "playerId": "6",
       "country": "Earth (no country)",
@@ -162,9 +168,11 @@
           "date": "4 June 2026",
           "image": "certificates/Racing Kings/6: CuberJ (Member).jpeg",
           "note": ""
-        },
-        
-        {
+          }
+      ]
+    },
+
+    {
       "player": "panagiskosmatos",
       "playerId": "7",
       "country": "Greece",
