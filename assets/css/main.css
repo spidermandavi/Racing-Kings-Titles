@@ -586,3 +586,13 @@ button, a.button {
     align-items: flex-start;
   }
 }
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
