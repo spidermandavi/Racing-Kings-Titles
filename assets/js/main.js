@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (const section of sections) {
       const rect = section.getBoundingClientRect();
-      if (rect.top - offset <= 0) {
-        current = section.id;
-      }
+      if (rect.top - offset <= 0) current = section.id;
     }
 
     chips.forEach((chip) => {
@@ -24,17 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-view");
-      }
+      if (entry.isIntersecting) entry.target.classList.add("in-view");
     });
   }, { threshold: 0.14 });
 
   revealElements.forEach((el) => observer.observe(el));
-
-  if (header) {
-    observer.observe(header);
-  }
+  if (header) observer.observe(header);
 
   window.addEventListener("scroll", setActiveChip, { passive: true });
   window.addEventListener("resize", setActiveChip);
